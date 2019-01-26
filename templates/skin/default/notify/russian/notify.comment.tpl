@@ -1,4 +1,9 @@
-Пользователь <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> упомянул Вас в <a href="{$oParentTarget->getUrl()}#comment{$oTarget->getId()}">комментарии</a> к топику <b><a href="{$oParentTarget->getUrl()}">{$oParentTarget->getTitle()}</a></b>
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+<br>
 
-<br><br>
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>
+Пользователь <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> упомянул вас в 
+<a href="{$oParentTarget->getUrl()}#comment{$oTarget->getId()}">комментарии</a> к дискуссии
+<strong><a href="{$oParentTarget->getUrl()}">{$oParentTarget->getTitle()}</a></strong>
+

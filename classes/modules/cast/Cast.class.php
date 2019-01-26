@@ -97,5 +97,3 @@ class PluginCastuser_ModuleCast extends Module
     }    
     
 }
-
-?>

@@ -7,10 +7,12 @@ class PluginCastuser_ModuleCast_MapperCast extends Mapper
     protected $oDb;
 
 	public function castExist($sTarget,$iTargerId,$iUserId){
+	    $table = Config::Get('plugin.castuser.db.table.user_cast_history');
+	    
 		$sql = "SELECT 
 					COUNT(*) as cast_count	 
 				FROM 
-	 				".Config::Get('plugin.castuser.db.table.user_cast_history')." AS tc
+	 				{$table} AS tc
 	 			WHERE
 	 				target = ?
 	 			AND 
@@ -31,10 +33,11 @@ class PluginCastuser_ModuleCast_MapperCast extends Mapper
 	}
     
 	public function saveExist($sTarget,$iTargerId,$iUserId){
+	    $table = Config::Get('plugin.castuser.db.table.user_cast_history');
 		$sql="
 			INSERT INTO 
-				".Config::Get('plugin.castuser.db.table.user_cast_history')."
-			VALUES (NULL,?,?d,?d);
+				{$table}
+			VALUES (NULL, ?, ?d, ?d);
 		";
 		
 		return $this->oDb->query(

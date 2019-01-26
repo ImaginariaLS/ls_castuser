@@ -1,4 +1,8 @@
-Пользователь <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> упомянул Вас в топике <b><a href="{$oTarget->getUrl()}">{$oTarget->getTitle()}</a></b>
+<h2>{cfg name='view.name'}</h2>
+<h4>{cfg name='view.description'}</h4>
+<hr>
+<br>
 
-<br><br>
-С уважением, администрация сайта <a href="{cfg name='path.root.web'}">{cfg name='view.name'}</a>
+Пользователь <a href="{$oUser->getUserWebPath()}">{$oUser->getLogin()}</a> упомянул вас в дискуссии 
+<strong><a href="{$oTarget->getUrl()}">{$oTarget->getTitle()}</a></strong>
+

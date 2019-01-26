@@ -6,12 +6,12 @@
     </name>
     <author>
         <lang name="default">author</lang>
-        <lang name="russian">Артем tema_mak Маковецкий</lang>
+        <lang name="russian">Артем tema_mak Маковецкий + Karel Wintersky</lang>
     </author>
     <homepage>http://livestreet.ru</homepage>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <requires>
-        <livestreet>1.0.1</livestreet>
+        <livestreet>1.0.4</livestreet>
         <plugins>
         </plugins>
     </requires>
